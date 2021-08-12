@@ -10,13 +10,15 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author ajf_4
  */
 public class AyudaForm extends javax.swing.JInternalFrame {
-    AyudaForm aux = new AyudaForm();
+   // AyudaForm ayuda = new AyudaForm();
    
     public AyudaForm() {
         initComponents();
@@ -81,7 +83,7 @@ public class AyudaForm extends javax.swing.JInternalFrame {
     private void contactoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactoActionPerformed
         try {
 
-            Desktop.getDesktop().browse(new URI("http://www.codigosparadesarrolladores.blogspot.com"));
+            Desktop.getDesktop().browse(new URI("https://github.com/AlanWLFx/"));
 
         } catch (URISyntaxException ex) {
 
@@ -95,12 +97,19 @@ public class AyudaForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_contactoActionPerformed
 
     private void manualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manualActionPerformed
-        try {
-     File path = new File ("‪C:\\Users\\ajf_4\\Documents\\materias\\Integradora\\Sistema\\Manual_Usuario.pd");
-     Desktop.getDesktop().open(path);
-}catch (IOException ex) {
-     ex.printStackTrace();
-}
+       try {
+
+            Desktop.getDesktop().browse(new URI("https://drive.google.com/file/d/1XNz1sxJAJ2K-Ktp7prbv-yO-SqlrQRpt/view?usp=sharing"));
+
+        } catch (URISyntaxException ex) {
+
+            System.out.println(ex);
+
+        }catch(IOException e){
+
+            System.out.println(e);
+
+        }
     }//GEN-LAST:event_manualActionPerformed
 
 
